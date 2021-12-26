@@ -22,3 +22,22 @@ export AWS_SECRET_ACCESS_KEY=aws-secret-key
 go run listec2instance.go --tag "Name" --value "myserver"
 ```
 
+## Start or stop an instances
+
+Start an instance
+
+```
+export AWS_REGION=region-name
+export AWS_ACCESS_KEY_ID=aws-access-key-id
+export AWS_SECRET_ACCESS_KEY=aws-secret-key
+go run start-stopec2.go --id "i-ab54a98efc35e659" --action "start"
+```
+
+Stop an instance
+
+```
+export AWS_REGION=region-name
+export AWS_ACCESS_KEY_ID=aws-access-key-id
+export AWS_SECRET_ACCESS_KEY=aws-secret-key
+go run start-stopec2.go --id "i-ab54a98efc35e659" --action "stop"
+```
