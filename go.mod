@@ -1,4 +1,4 @@
-module awssdk-go-examples
+module https: //github.com/navilg/awssdk-go-examples
 
 go 1.13
 
