@@ -10,3 +10,15 @@ go run upload2s3.go -b "mybucket/myfiles/" -k "myfile.txt" -d 10m < myfile.txt
 ```
 
 Key must have s3:PutObject permission.
+
+## List instances
+
+List instances with specific tag
+
+```
+export AWS_REGION=region-name
+export AWS_ACCESS_KEY_ID=aws-access-key-id
+export AWS_SECRET_ACCESS_KEY=aws-secret-key
+go run listec2instance.go --tag "Name" --value "myserver"
+```
+
